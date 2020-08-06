@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UITextField *num1;
+@property (strong, nonatomic) IBOutlet UITextField *result;
 
 @end
 

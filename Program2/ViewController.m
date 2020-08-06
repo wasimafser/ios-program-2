@@ -13,10 +13,14 @@
 @end
 
 @implementation ViewController
-
+@synthesize num1, result;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)eval:(id)sender {
+    int num = [num1.text intValue];
+    result.text = [NSString stringWithFormat:@"%d", num*2];
 }
 
 
